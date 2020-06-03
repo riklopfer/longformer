@@ -325,6 +325,3 @@ def mask_invalid_locations(input_tensor: torch.Tensor, w: int, d: Union[torch.Te
 
 
 diagonaled_mm = DiagonaledMM.apply
-
-# The non-tvm implementation is the default, we don't need to load the kernel at loading time.
-# DiagonaledMM._get_function('float32', 'cuda')
