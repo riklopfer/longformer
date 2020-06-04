@@ -37,8 +37,8 @@ therefore, it is suitable for finetuning on dowstream tasks but not a good choic
     ```bash
     conda create --name longformer python=3.7
     conda activate longformer
-    conda install cudatoolkit=10.0
-    pip install git+https://github.com/allenai/longformer.git
+    conda install cudatoolkit=10.2
+    pip install git+https://github.com/riklopfer/longformer.git@cuda10.2-tvm
     ```
 
 3. Run the model
